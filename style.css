@@ -1,0 +1,131 @@
+/*************************** colour part ************************/
+
+:root{
+    --body:#ffffff;
+    --theame1:#121212;
+    --theame2:#c4956a;
+    --theame3:#74512F;
+    --heading:#3e3e45;
+    --darkpara:#121212;
+    --lightpara:#ffffff;
+    --submit_btn:#3cb371;
+    --white:#fff;
+}
+/*********************** root part *********************/
+* {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/*************************** fonts part ************************/
+
+
+/*********************** basic part *********************/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--body);
+}
+
+.row {
+    width: 1200px;
+    margin: auto;
+}
+
+.landing_row {
+    width: 1300px;
+    margin: auto;
+}
+
+section {
+    padding: 70px 0;
+}
+
+.section_heading {
+    padding-bottom: 20px;
+}
+
+.section_sub_hreading {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--theame3);
+    font-weight: 600;
+}
+
+.heading_bold {
+    font-weight: 700;
+}
+
+/*********************** font size part *********************/
+h1 {
+    font-size: 45px;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+h2 {
+    font-size: 35px;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 18px;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+h4 {
+    font-size: 14px;
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+p {
+    font-size: 14px;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+li {
+    font-size: 13px;
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+label {
+    font-family: "Poppins", serif;
+}
+
+.img_1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/********************************************************************************************************************************************************/
+/********************************************************************************************************************************************************/
+
+@media (min-width : 767px) and (max-width : 1024px){
+
+}
+
+/********************************************************************************************************************************************************/
+/********************************************************************************************************************************************************/
+
+@media (min-width : 320px) and (max-width : 766px){
+    
+}
