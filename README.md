@@ -3,3 +3,6 @@ a tag added for seo purpose
 
 img tag added for seo purpose
   <img src="test.jpg" alt="test" class="img_1" loading="lazy">
+
+meta description added
+   <meta name="description" content="Billing Web Application" />
