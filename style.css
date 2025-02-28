@@ -49,7 +49,7 @@ body {
 .contain {
   width: 82%;
   height: 100%;
-  background-color: var(--theame2);
+  background-color: red;
 }
 section {
   padding: min(5rem, 8%);
