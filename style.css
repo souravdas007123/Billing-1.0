@@ -234,8 +234,13 @@ a {
   /* background-color: #2ebdb0; */
   padding: 1.5rem 4rem;
 }
-.searchbar{
-  /* background-color: #1a1ab5; */
+.search{
+  padding: 1.2rem 1rem;
+  border-radius: 1rem;
+  border: .1rem solid var(--theame3);
+}
+.searchbar ion-icon{
+  font-size: 2rem;
 }
 .user_notification{
   display: flex;
