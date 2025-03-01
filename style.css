@@ -6,10 +6,11 @@
 /*************************** colour part ************************/
 :root {
   --body: #f4f8fb;
-  --theame1: #f4f8fb;
+  --theame1: #e9ebec;
   --theame2: #ffffff;
   --theame3: #b6b5ea;
   --theame4: #3f4d68;
+  --theame5: #7571f9;
   --heading: #3e3e45;
   --paragraph: #121212;
   --navbar_link: #f4f8fb;
@@ -52,16 +53,16 @@ body {
 .sidebar {
   width: 15%;
   height: 100%;
-  padding: 1.5rem 0rem;
-  background-color: var(--sidebar);
+  /* padding: 1.5rem 0rem; */
+  background-color: var(--theame2);
   color: white;
 }
 
 .contain {
   width: 85%;
   height: 100%;
-  padding: 1.5rem 0rem;
-  /* background-color: red; */
+  /* padding: 1.5rem 0rem; */
+  background-color: var(--theame1);
   color: var(--paragraph);
 }
 
@@ -137,7 +138,7 @@ a {
 }
 
 .sidebar ul li a {
-  color: var(--navbar_link);
+  color: var(--theame4);
   display: block;
   padding: 1.5rem 1.6rem;
   transition: background-color 0.3s ease;
@@ -164,7 +165,7 @@ a {
   
 }
 .sidebar ul li a:hover {
-  background-color: var(--hover);
+  background-color: var(--theame1);
 }
 
 .nav_link a ion-icon {
@@ -175,8 +176,8 @@ a {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  /* background-color: red; */
-  padding: 2rem 0;
+  background-color: var(--theame5);
+  padding: 3rem 0;
 }
 
 .company_logo img {
@@ -185,7 +186,7 @@ a {
 }
 
 .company_name h1 {
-  color: var(--navbar_heading);
+  color: var(--theame2);
 }
 .sidebar {
   width: 250px;
@@ -220,7 +221,7 @@ a {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  color: blueviolet;
+  color: var(--theame5);
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 .rotated {
@@ -231,7 +232,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: #2ebdb0; */
+  background-color: var(--theame2);
   padding: 1.5rem 4rem;
 }
 .searchbar{
