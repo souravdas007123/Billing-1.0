@@ -227,7 +227,26 @@ a {
   transform: rotate(180deg);
 }
 /*********************** content part *********************/
-
+.contain_upper_section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #2ebdb0; */
+  padding: 1.5rem 4rem;
+}
+.searchbar{
+  /* background-color: #1a1ab5; */
+}
+.user_notification{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background-color: #3e3e45; */
+  gap: 2.5rem;
+}
+.user_notification ion-icon{
+  font-size: 2rem;
+}
 /********************************************************************************************************************************************************/
 /* Media for Tablet */
 /********************************************************************************************************************************************************/
