@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Manager</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .setting-container {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+        }
+        .setting-sidebar {
+            background: #ffffff;
+            color: rgb(0, 0, 0);
+            padding: 10px 20px;
+        }
+        .setting-sidebar ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: flex-start;
+        }
+        .setting-sidebar ul li {
+            padding: 15px 20px;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s ease;
+            text-align: left;
+        }
+        .setting-sidebar ul li:hover {
+            background: #eaebed;
+            border-bottom: 3px solid #3498db;
+        }
+        .settings-content {
+            flex-grow: 1;
+            padding: 20px;
+            background: white;
+        }
+        .settings-section {
+            display: none;
+        }
+        .settings-section.active {
+            display: block;
+        }
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            background: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #eaebed;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="setting-container">
+        <aside class="setting-sidebar">
+            <ul>
+                <li onclick="showTab('user-settings')">User Settings</li>
+                <li onclick="showTab('business-settings')">Business Settings</li>
+                <li onclick="showTab('security-settings')">Security</li>
+                <li onclick="showTab('system-preferences')">System Preferences</li>
+            </ul>
+        </aside>
+        <main class="settings-content">
+            <section id="user-settings" class="settings-section active">
+                <h2>User Settings</h2>
+                <label>Username: <input type="text" value="Admin"></label>
+                <label>Email: <input type="email" value="admin@example.com"></label>
+                <button>Save</button>
+            </section>
+            <section id="business-settings" class="settings-section">
+                <h2>Business Settings</h2>
+                <label>Business Name: <input type="text" value="ABC Corp"></label>
+                <label>Currency: <select><option>USD</option><option>EUR</option></select></label>
+                <button>Save</button>
+            </section>
+            <section id="security-settings" class="settings-section">
+                <h2>Security</h2>
+                <label>Change Password: <input type="password" placeholder="New Password"></label>
+                <label>Confirm Password: <input type="password" placeholder="Confirm Password"></label>
+                <label><input type="checkbox"> Enable Two-Step Verification</label>
+                <button>Update Security</button>
+            </section>
+            <section id="system-preferences" class="settings-section">
+                <h2>System Preferences</h2>
+                <label><input type="checkbox"> Enable Notifications</label>
+                <button>Save</button>
+            </section>
+        </main>
+    </div>
+    <script>
+        function showTab(tabId) {
+            document.querySelectorAll('.settings-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(tabId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
