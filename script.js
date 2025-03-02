@@ -19,3 +19,27 @@ function toggleDarkMode() {
         document.documentElement.classList.add("dark-mode");
     }
 })();
+
+    function loadPage(page) {
+        fetch(page)
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById("settings-container").innerHTML = html;
+            })
+            .catch(error => console.error("Error loading page:", error));
+    }
+
+    function showTab(tabId) {
+        // Hide all settings sections
+        document.querySelectorAll('.settings-section').forEach(section => {
+            section.classList.remove('active');
+        });
+
+        // Show the selected section
+        const activeTab = document.getElementById(tabId);
+        if (activeTab) {
+            activeTab.classList.add('active');
+        } else {
+            console.error(`Tab with ID "${tabId}" not found.`);
+        }
+    }
