@@ -303,7 +303,16 @@ a {
 .dark-mode .menubar{
   background: #222;
 }
-
+.dark-mode .setting-sidebar{
+  background: #222;
+  color: #ffffff;
+}
+.dark-mode .settings-content{
+  background: #222;
+}
+.dark-mode .contain{
+  background: #2c2c2c;
+}
 .dark-mode .sidebar ul li a{
   color: #ffffff;
 } 
