@@ -77,13 +77,13 @@ body {
 }
 .menubar {
   background: var(--sidebar); /* Just for visibility */
-  height: 12%;
+  height: 10%;
   width: 100%;
   transition: margin-left 0.3s ease-in-out;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 40px;
+  padding: 2rem 1.8rem;
   color: rgb(0, 0, 0);
 }
 #settings-container{
@@ -200,8 +200,8 @@ a {
   justify-content: space-evenly;
   align-items: center;
   background-color: var(--heading);
-  padding: 2rem 0;
-  height: 12%;
+  padding: 2rem 0rem;
+  height: 10%;
 }
 
 .company_logo img {
@@ -233,22 +233,22 @@ a {
   overflow: hidden;
 }
 .sidebar.collapsed .toggle-container{
-  gap: 35px;
+  gap: 3.5rem;
 }
 .collapsed .menu_link .nav_link a{
   justify-content: center;
 }
 .toggle-btn {
   position: absolute;
-  right: -15px;
-  top: 12%;
-  font-size: 18px;
+  right: -1.5rem;
+  top: 10%;
+  font-size: 1.8rem;
   font-weight: 500;
   transform: translateY(-50%);
   background: #fff;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 2.5rem;
+  height: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -267,35 +267,35 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 45px;
-  width: 100%;
-  margin-top: 130px;
+  gap: 4.5rem;
+  /* width: 100%; */
+  /* margin-top: 130px; */
   padding: 1rem;
 }
 .toggle-switch {
   position: absolute;
-  width: 40px;
-  height: 20px;
+  width: 3.2rem;
+  height: 1.6rem;
   background: #ccc;
-  border-radius: 10px;
+  border-radius: 1rem;
   cursor: pointer;
 }
 .toggle-switch::before {
   content: "";
   position: absolute;
-  width: 18px;
-  height: 18px;
+  width: 1.4rem;
+  height: 1.4rem;
   background: white;
   border-radius: 50%;
-  top: 1px;
-  left: 2px;
+  top: .1rem;
+  left: .2rem;
   transition: transform 0.3s;
 }
 .dark-mode .toggle-switch {
   background: #666;
 }
 .dark-mode .toggle-switch::before {
-  transform: translateX(20px);
+  transform: translateX(1.4rem);
 }
 .dark-mode .sidebar{
   background: #222;
@@ -313,28 +313,94 @@ a {
 .dark-mode .icons ion-icon {
   color: #fff;
 } 
-/******************** Menubar *******************/
+
+/*********************** content part start *********************/
+
+/******************** searchbar and user section *******************/
 
 .search-bar input {
-  padding: 8px;
-  width: 200px;
+  padding: .8rem;
+  width: 20rem;
   border: none;
-  border-radius: 4px;
+  border-radius: .4rem;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .icons {
   display: flex;
-  gap: 20px;
+  gap: 2rem;
   align-items: center;
 }
 .icons ion-icon {
-  font-size: 20px;
+  font-size: 2rem;
   cursor: pointer;
 }
-/*********************** content part *********************/
-
-
-/* Media for Tablet */
+/******************** setting *******************/
+.setting-container {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  width: 100%;
+  flex-direction: column;
+}
+.setting-sidebar {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 1rem 2rem;
+}
+.setting-sidebar ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+.setting-sidebar ul li {
+  padding: 1.5rem 2rem;
+  cursor: pointer;
+  border-bottom: .3rem solid transparent;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+.setting-sidebar ul li:hover {
+  background: #eaebed;
+  border-bottom: .3rem solid var(--theame3);
+}
+.settings-content {
+  flex-grow: 1;
+  padding: 2rem;
+  height: 40rem;
+  background: white;
+}
+.settings-section {
+  display: none;
+}
+.settings-section.active {
+  display: block;
+}
+label {
+  display: block;
+  margin: 1rem 0;
+}
+input, select {
+  width: 100%;
+  padding: .8rem;
+  margin-top: .5rem;
+  border: 1px solid #ccc;
+  border-radius: .5rem;
+}
+button {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: .5rem;
+}
+button:hover {
+  background: #eaebed;
+  color: #000;
+}
+/************************** Media for Tablet ***************************/
 
 
 @media (min-width : 767px) and (max-width : 1024px) {
@@ -345,7 +411,7 @@ a {
 }
 
 
-/* Media for Mobile */
+/* ************************ Media for Mobile ****************************/
 
 
 @media (min-width: 320px) and (max-width: 766px) {
