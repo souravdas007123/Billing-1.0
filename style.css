@@ -373,6 +373,7 @@ a {
 .setting-sidebar ul li:hover {
   background: #eaebed;
   border-bottom: .3rem solid var(--theame3);
+  color: var(--paragraph);
 }
 .settings-content {
   flex-grow: 1;
