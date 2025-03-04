@@ -240,15 +240,15 @@ a {
 }
 .toggle-btn {
   position: absolute;
-  right: -1.5rem;
+  right: -1rem;
   top: 10%;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 500;
   transform: translateY(-50%);
   background: #fff;
   border-radius: 50%;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2rem;
+  height: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
