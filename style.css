@@ -210,6 +210,9 @@ a {
 
 .company_name h1 {
   color: var(--navbar_heading);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .collapsed {
