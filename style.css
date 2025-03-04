@@ -1,6 +1,5 @@
 /*************************** font cdn ************************/
 
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100..900&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
 
 /*************************** colour part ************************/
@@ -295,7 +294,7 @@ a {
   background: #666;
 }
 .dark-mode .toggle-switch::before {
-  transform: translateX(1.4rem);
+  transform: translateX(1.65rem);
 }
 .dark-mode .sidebar{
   background: #222;
