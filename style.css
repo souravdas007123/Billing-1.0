@@ -359,18 +359,18 @@ a {
   width: 100%;
   flex-direction: column;
 }
-.setting-sidebar {
+.setting-sidebar  {
   background: #ffffff;
   color: rgb(0, 0, 0);
   padding: 1rem 2rem;
 }
-.setting-sidebar ul {
+.setting-sidebar ul{
   list-style: none;
   padding: 0;
   display: flex;
   justify-content: flex-start;
 }
-.setting-sidebar ul li {
+.setting-sidebar ul li{
   padding: 1.5rem 2rem;
   cursor: pointer;
   border-bottom: .3rem solid transparent;
@@ -382,7 +382,7 @@ a {
   border-bottom: .3rem solid var(--theame3);
   color: var(--paragraph);
 }
-.settings-content {
+.settings-content  {
   flex-grow: 1;
   padding: 2rem;
   height: 40rem;
@@ -391,7 +391,7 @@ a {
 .settings-section {
   display: none;
 }
-.settings-section.active {
+.settings-section.active{
   display: block;
 }
 label {
