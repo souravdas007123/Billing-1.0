@@ -82,7 +82,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 1.8rem;
+  padding: 2rem 4rem;
   color: rgb(0, 0, 0);
 }
 #settings-container{
@@ -269,11 +269,10 @@ a {
 .toggle-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content:center;
   gap: 4.5rem;
-  /* width: 100%; */
-  /* margin-top: 130px; */
-  padding: 1rem;
+  padding: 1rem 5rem;
+  /* background-color: #2ebdb0; */
 }
 .toggle-switch {
   position: absolute;
