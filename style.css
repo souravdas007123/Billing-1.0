@@ -206,20 +206,18 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 .company_logo img {
   width: 2.5rem;
   height: 2.5rem;
 }
-
 .company_name h1 {
   color: var(--navbar_heading);
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .collapsed {
   width: 5%;
 }
@@ -230,8 +228,6 @@ a {
 .collapsed .nav_text{
   display: none;
 }
-
-
 .sidebar.collapsed + .main-component {
   margin-left: 0; /* Keep it in place */
 }
