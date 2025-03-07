@@ -202,7 +202,12 @@ a {
   padding: 2rem 0rem;
   height: 10%;
 }
-
+.company_head span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+}
 .company_logo img {
   width: 2.5rem;
   height: 2.5rem;
