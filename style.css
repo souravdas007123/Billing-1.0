@@ -271,7 +271,7 @@ a {
   align-items: center;
   justify-content:center;
   gap: 4.5rem;
-  padding: 1rem 5rem;
+  padding: 1rem 2rem;
   /* background-color: #2ebdb0; */
 }
 .toggle-switch {
