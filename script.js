@@ -39,9 +39,9 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("settingsPageLink").addEventListener("click", function () {
         loadPage("setting.html");
     });
-    document.getElementById("vendorPageLink").addEventListener("click", function () {
-        loadPage("vendor.html");
-    });
+    // document.getElementById("vendorPageLink").addEventListener("click", function () {
+    //     loadPage("vendor.html");
+    // });
 });
 
     function showTab(tabId) {
