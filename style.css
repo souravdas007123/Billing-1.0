@@ -333,6 +333,9 @@ a {
 .dark-mode .section{
   background: #222;
 }
+.dark-mode .navbar a{
+  color: #ffffff;
+}
 .dark-mode .sidebar ul li a{
   color: #ffffff;
 } 
