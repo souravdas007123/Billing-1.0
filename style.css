@@ -347,13 +347,13 @@ a {
   cursor: pointer;
 }
 /******************** setting *******************/
-.setting-container {
+/* .setting-container {
   display: flex;
   justify-content: center;
   /* align-items: center; */
-  width: 100%;
+/*   width: 100%;
   flex-direction: column;
-}
+} */ 
 .setting-sidebar  {
   background: #ffffff;
   color: rgb(0, 0, 0);
