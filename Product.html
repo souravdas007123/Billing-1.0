@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Table</title>
+    <style>
+        .product-container {
+            width: 90%;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 13px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .status {
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .active {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .out-of-stock {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-container">
+        <h2>Products</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Category</th>
+                    <th>SKU</th>
+                    <th>Variant</th>
+                    <th>Price</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="productTableBody">
+                <!-- Data will be inserted here dynamically -->
+            </tbody>
+        </table>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        console.log("script running")
+        const products = [
+            { name: "Solid Lapel Neck Blouse", category: "CLOTHING", sku: "TS38790", variant: "Varies on Size, Color", price: "$24", status: "Active" },
+            { name: "Point Toe Heeled Pumps", category: "SHOES", sku: "TS38843", variant: "Varies on Size", price: "$56", status: "Out of Stock" },
+            { name: "Crop Tank Top", category: "CLOTHING", sku: "TS97545", variant: "Varies on Size, Material", price: "$19", status: "Active" },
+            { name: "Minimalist Flap Chain Bag", category: "BAG", sku: "TS00213", variant: "2 Sizes", price: "$32", status: "Active" },
+            { name: "Front Crop Top", category: "CLOTHING", sku: "TS36940", variant: "Varies on Color", price: "$17", status: "Active" },
+            { name: "Schiffy Drawstring Crop Top", category: "CLOTHING", sku: "TS31366", variant: "Varies on Color", price: "$21", status: "Active" },
+            { name: "Pineapple Earrings", category: "JEWELRY", sku: "TS84323", variant: "Varies on Size", price: "$8", status: "Out of Stock" }
+        ];
+    
+        const productTableBody = document.getElementById("productTableBody");
+    
+        if (!productTableBody) {
+            console.error("Table body not found!");
+            return;
+        }
+    
+        products.forEach(product => {
+            const row = document.createElement("tr");
+            row.innerHTML = `
+                <td>${product.name}</td>
+                <td>${product.category}</td>
+                <td>${product.sku}</td>
+                <td>${product.variant}</td>
+                <td>${product.price}</td>
+                <td><span class="status ${product.status === 'Active' ? 'active' : 'out-of-stock'}">${product.status}</span></td>
+            `;
+            productTableBody.appendChild(row);
+        });
+    });
+    </script>
+</body>
+</html>
