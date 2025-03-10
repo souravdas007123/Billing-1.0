@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
         loadPage("setting.html");
     });
     document.getElementById("vendorPageLink").addEventListener("click", function () {
-        loadPage("vendor.html");
+        loadPage("Vendor.html");
     });
 });
 
