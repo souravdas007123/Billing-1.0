@@ -22,14 +22,19 @@ function toggleDarkMode() {
     }
 })();
 
-    function loadPage(page) {
-        fetch(page)
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById("settings-container").innerHTML = html;
-            })
-            .catch(error => console.error("Error loading page:", error));
-    }
+// Attach event listeners to sidebar menu items
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("productPageLink").addEventListener("click", function () {
+        loadPage("Product.html");
+    });
+
+    document.getElementById("settingsPageLink").addEventListener("click", function () {
+        loadPage("setting.html");
+    });
+    document.getElementById("vendorPageLink").addEventListener("click", function () {
+        loadPage("vendor.html");
+    });
+});
 
     function showTab(tabId) {
         // Hide all settings sections
