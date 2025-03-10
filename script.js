@@ -65,10 +65,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     document.addEventListener("DOMContentLoaded", function () {
-        console.log("JavaScript loaded.");
     
         function loadProducts() {
-            console.log("Checking for product table...");
     
             const productTableBody = document.getElementById("productTableBody");
     
@@ -78,7 +76,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 return;
             }
     
-            console.log("Table body found. Inserting products...");
     
             const products = [
                 { name: "Solid Lapel Neck Blouse", category: "CLOTHING", sku: "TS38790", variant: "Varies on Size, Color", price: "$24", status: "Active" },
@@ -104,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 productTableBody.appendChild(row);
             });
     
-            console.log("Products loaded successfully.");
+            
         }
     
         // Run the function after a delay to ensure dynamic content is loaded
