@@ -330,6 +330,9 @@ a {
 .dark-mode .vendor-container{
   background: #2c2c2c;
 }
+.dark-mode .section{
+  background: #222;
+}
 .dark-mode .sidebar ul li a{
   color: #ffffff;
 } 
