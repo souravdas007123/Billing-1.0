@@ -315,6 +315,15 @@ a {
 .dark-mode .contain{
   background: #2c2c2c;
 }
+.dark-mode .product-container{
+  background: #222;
+}
+.dark-mode .product-card{
+  background: #2c2c2c;
+}
+.dark-mode table thead th{
+  background: #2c2c2c;
+}
 .dark-mode .sidebar ul li a{
   color: #ffffff;
 } 
