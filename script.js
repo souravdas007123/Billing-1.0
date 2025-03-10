@@ -32,9 +32,9 @@ function loadPage(page) {
 }
 // Attach event listeners to sidebar menu items
 document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("productPageLink").addEventListener("click", function () {
-        loadPage("Product.html");
-    });
+    // document.getElementById("productPageLink").addEventListener("click", function () {
+    //     loadPage("Product.html");
+    // });
 
     document.getElementById("settingsPageLink").addEventListener("click", function () {
         loadPage("setting.html");
