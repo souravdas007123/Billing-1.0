@@ -324,6 +324,12 @@ a {
 .dark-mode table thead th{
   background: #2c2c2c;
 }
+.dark-mode .vendor-box{
+  background: #222;
+}
+.dark-mode .vendor-container{
+  background: #2c2c2c;
+}
 .dark-mode .sidebar ul li a{
   color: #ffffff;
 } 
